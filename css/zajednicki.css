@@ -6,20 +6,19 @@ body{
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 1;
-    overflow: hidden;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .fixed-footer{
-    position: fixed;
+    position: absolute;
     bottom: 0;
-    height: 100px;
+    height: 100px; 
     width: 100%;
     background-color: #d68681;
     text-align: center;
-   padding: 20px;
+    padding: 20px;
     margin: 10px;
+
 }
 
 .levi{
@@ -39,7 +38,6 @@ body{
 
 header {
     display: flex;
-    /* position: absolute; */
     justify-content: flex-start;
     list-style-type: none;
     padding: 5px 0;
@@ -47,7 +45,9 @@ header {
     background-image: linear-gradient(#E7B5AE, #D68681, #E8D7C7, #F8E6CE);
     border-radius: 35px;
     box-shadow: 10px 10px 30px #e86a61;
+    overflow: hidden;
 }
+
 
 #nav-title {
  margin-left: 35px;

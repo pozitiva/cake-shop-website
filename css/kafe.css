@@ -1,0 +1,36 @@
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .grid-image {
+    display: block;
+    flex-basis: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+   
+  @media only screen and (min-width: 640px) {
+    .grid-image {
+      flex-basis: 50%;
+    }
+  }
+   
+  @media only screen and (min-width: 960px) {
+    .grid-image {
+      flex-basis: 33.333%;
+    }
+  }
+   
+  @media only screen and (min-width: 1280px) {
+    .grid-image {
+      flex-basis: 25%;
+    }
+  }
+   
+  @media only screen and (min-width: 1600px) {
+    .grid-image {
+      flex-basis: 20%;
+    }
+  }
