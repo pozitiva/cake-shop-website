@@ -1,17 +1,20 @@
 body{
     
     background-color: bisque;
+    /* display: flex;
+    flex-direction: column;
+    min-height: 100vh; */
 }
+
+ 
 #naslov{
     text-align: center;
     text-decoration-line: overline;
     text-decoration-color: rgb(159, 118, 81);
     font-size: 40px;
-font-style: oblique;
-color: rgb(151, 126, 98);
+    font-style: oblique;
+    color: rgb(151, 126, 98);
 }
-
-
 
 .flex-container1{
     display: flex;
@@ -19,9 +22,10 @@ color: rgb(151, 126, 98);
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 200px;
-    width: 100px;
-}
+    height: 200px; 
+    width: 100px; 
+
+ } 
 
 .flex-container2{
     display: flex;
@@ -31,6 +35,5 @@ color: rgb(151, 126, 98);
     align-items: center;
     height: 200px;
     width: 100px;
-}
-
+} 
 
