@@ -14,10 +14,27 @@ body{
 .fixed-footer{
     position: fixed;
     bottom: 0;
-    height: 90px;
+    height: 100px;
     width: 100%;
     background-color: #d68681;
     text-align: center;
+   padding: 20px;
+    margin: 10px;
+}
+
+.levi{
+  text-align:left;
+  float: left;
+  color: #F8E6CE;
+  width: 150px;
+  margin: 10px;
+}
+.desni{
+  float: right;
+  text-align: right;
+  color: #F8E6CE;
+  width: 220px;
+  margin: 20px;
 }
 
 .nav-type {
@@ -36,7 +53,7 @@ body{
 
     
   .nav-type li a {
-    color: black;
+    color:#F8E6CE;
     text-decoration: none;
     text-align: center;
     padding: 50px 50px;
