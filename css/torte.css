@@ -1,0 +1,12 @@
+body{
+    
+    background-color: bisque;
+}
+#naslov{
+    text-align: center;
+    text-decoration-line: overline;
+    text-decoration-color: rgb(159, 118, 81);
+    font-size: 40px;
+font-style: oblique;
+color: rgb(151, 126, 98);
+}
