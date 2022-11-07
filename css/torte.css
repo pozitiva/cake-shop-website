@@ -24,10 +24,10 @@ body{
     justify-content: center;
     width: 90%;
     margin: 0 auto;
-    padding: o 4px;
+    padding: 0 4px;
   }
  
-  .kolona {
+  /*.kolona {
     flex: 25%;
     flex-direction: row;
     flex-wrap: wrap;
@@ -41,7 +41,7 @@ body{
     height: 400px;
     margin: 0px;
     pad: 20px;
-  }
+  }*/
 
   @media (max-width: 1200px) {
     .kolona {
