@@ -20,6 +20,45 @@
                 </ul>
         </nav>
     </header>
+
+    <div class="porudzbina">
+
+        <form class="forma">
+           <div class="form-header">
+            <h1> Porudžbina </h1>
+            <div class="form-body">
+                <div class="row">
+                    <div class="input-group">
+                        <h2>Lični podaci</h2>
+                        <label for="imeprezime"> Ime i prezime </label>
+                        <input id="imeprezime" type="text" placeholder="Ime i prezime..." required>
+                        <label for="telefon"> Broj telefona </label>
+                        <input id="telefon" type="text" placeholder="Broj telefona..." required>
+                        <label for="adresa"> Adresa za dostavu i naplatu </label>
+                        <input id="adresa" type="text" placeholder="Adresa..." required>
+                        <label>
+                            <span>Država <span class="required">*</span></span>
+                            <select name="selection">
+                              <option value="select">Odaberite državu...</option>
+                              <option value="SRB">Srbija</option>
+                              <option value="CRO">Hrvatska</option>
+                              <option value="BIH">Bosna i Hercegovina</option>
+                              <option value="MNE">Crna Gora</option>
+                            </select>
+                           </label> 
+                        <label for="napomena"> Posebna napomena za dostavu </label>
+                        <textarea name="Napomena" id="napomena"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <h2>Odaberite artikle</h2>
+
+                    </div>
+                </div>
+            </div>
+           </div>
+        </form>
+    </div>
+
     
     <div class="fixed-footer">
         <div class="levi"><b>Adresa: </b> Jove Ilića 154, 11010 Beograd</div>

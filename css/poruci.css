@@ -1,0 +1,42 @@
+@import url('https://fonts.google.com/specimen/Albert+Sans');
+
+*{
+    margin: 0;
+    font-family: "Albert Sans", sans-serif;
+}
+
+body{
+    height: 100%
+}
+
+.porudzbina{
+    height: 100%;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
+
+.forma{
+    flex: 1;
+    background-color: blanchedalmond;
+    max-width: 600px;
+    border-radius: 10px;
+    border: 1px solid #999;
+}
+
+.form-header{
+    padding: 15px 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+.form-header h1{
+    font-size: 30px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.napomena{
+    size: 20px;
+}
