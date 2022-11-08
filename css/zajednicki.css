@@ -1,7 +1,7 @@
 body{
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
     background-color: #e7b5ae;
     margin: 0;
     padding: 0;
@@ -74,6 +74,10 @@ body{
   }
 }
 
+@media screen and (max-width: 600px){
+
+}
+
 header {
     display: flex;
     justify-content: flex-start;
@@ -92,13 +96,13 @@ header {
   font-size: 1.5em;
 }
 
-header li {
+.topnav li {
   list-style: none;
   display: inline-block;
   padding: 0 20px;
 }
 
-header  li a {
+.topnav li a {
   color:black;
   text-decoration: none;
   text-align: center;
@@ -112,6 +116,8 @@ header  li a {
 header a:hover {
   color: #E8D7C7;
 }
+
+
  
 
 
