@@ -23,21 +23,23 @@
 
     <div class="porudzbina">
 
-        <form class="forma">
+        <form class="forma" >
            <div class="form-header">
             <h1> Porudžbina </h1>
             <div class="form-body">
-                <div class="row">
                     <div class="input-group">
-                        <h2>Lični podaci</h2>
+                        <h2 class="naslov">Lični podaci</h2>
                         <label for="imeprezime"> Ime i prezime </label>
                         <input id="imeprezime" type="text" placeholder="Ime i prezime..." required>
-                        <label for="telefon"> Broj telefona </label>
+                        <div class="input-group">
+                          <label for="telefon"> Broj telefona </label>
                         <input id="telefon" type="text" placeholder="Broj telefona..." required>
                         <label for="adresa"> Adresa za dostavu i naplatu </label>
                         <input id="adresa" type="text" placeholder="Adresa..." required>
-                        <label>
-                            <span>Država <span class="required">*</span></span>
+                        <label>  
+                        </div>
+                        <div class="input-group">
+                           <span>Država <span class="required">*</span></span>
                             <select name="selection">
                               <option value="select">Odaberite državu...</option>
                               <option value="SRB">Srbija</option>
@@ -45,15 +47,54 @@
                               <option value="BIH">Bosna i Hercegovina</option>
                               <option value="MNE">Crna Gora</option>
                             </select>
-                           </label> 
-                        <label for="napomena"> Posebna napomena za dostavu </label>
+                           </label>  
+                        </div>
+                          <div class="input-group">
+                            <label for="napomena"> Posebna napomena za dostavu </label>
                         <textarea name="Napomena" id="napomena"></textarea>
+                          </div>  
+                        
                     </div>
-                    <div class="input-group">
-                        <h2>Odaberite artikle</h2>
+                   
+                        <h2 class="naslov">Odaberite artikle</h2> 
+                        <div class="input-group">
+                     <ul class="innercheck">
+                        <li><input type="checkbox" name="Torte" id="odabirtorte">
+                    <label for="odabirtorte">Doboš torta</label></li>
+                    <li><input type="checkbox" name="Torte" id="odabirtorte">
+                        <label for="odabirtorte">Baron torta</label></li>
+                        <li><input type="checkbox" name="Torte" id="odabirtorte">
+                            <label for="odabirtorte">ČokoMoko torta</label></li>
+                            <li><input type="checkbox" name="Torte" id="odabirtorte">
+                                <label for="odabirtorte">Jaffa torta</label></li>
+                                <li><input type="checkbox" name="Torte" id="odabirtorte">
+                                    <label for="odabirtorte">Plazma torta</label></li>
+                                    <li><input type="checkbox" name="Torte" id="odabirtorte">
+                                        <label for="odabirtorte">Moskva torta</label></li>
+                                    </div> 
+                                 </ul>
+                                <div class="inputgroup">
+                                    <ul class="innercheck">
+                                     <li><input type="checkbox" name="Kafe" id="odabirkafe">
+                                    <label for="odabirkafe">Kafa1</label></li>
+                                    <li><input type="checkbox" name="Kafe" id="odabirkafe">
+                                        <label for="odabirkafe">Kafa2</label></li>
+                                        <li><input type="checkbox" name="Kafe" id="odabikafe">
+                                            <label for="odabirkafe">Kafa3</label></li>
+                                            <li><input type="checkbox" name="Kafe" id="odabirkafe">
+                                                <label for="odabirkafe">Kafa4</label></li>
+                                                <li><input type="checkbox" name="Kafe" id="odabirkafe">
+                                                    <label for="odabirkafe">Kafa5</label></li>
+                                                    <li><input type="checkbox" name="Kafe" id="odabirkafe">
+                                                        <label for="odabirkafe">Kafa6</label></li>  
+                                                    </ul>             
+                                </div>
+                              
 
-                    </div>
-                </div>
+                                                    <button id="poruci" type="submit">Poruči</button>
+                                                 <button type="clear">Izbriši</button>
+              
+               
             </div>
            </div>
         </form>
@@ -66,5 +107,7 @@
         <div class="desni"><b> Broj telefona:</b> 060/61-36-125 <br><i>porudzbine@belacokolada.rs</i> </div>
       
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

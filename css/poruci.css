@@ -26,6 +26,12 @@ body{
     border: 1px solid #999;
 }
 
+.naslov{
+    font-size: 20px;
+    text-align: center;
+    color: aliceblue;
+}
+
 .form-header{
     padding: 15px 0;
     border-bottom: 1px solid #cccccc;
@@ -40,3 +46,22 @@ body{
 .napomena{
     size: 20px;
 }
+
+.innercheck {
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  button {
+    margin-left: auto;
+    padding: 8px 16px;
+    border: none;
+    background: rgb(250, 134, 134);
+    color: #f2f2f2;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 2px;
+  }
