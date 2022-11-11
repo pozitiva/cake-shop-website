@@ -23,39 +23,57 @@
 
     <div class="porudzbina">
 
-        <form class="forma" >
+        <form class="forma" onsubmit="Klik()" >
            <div class="form-header">
             <h1> Porudžbina </h1>
+            <br>
             <div class="form-body">
                     <div class="input-group">
                         <h2 class="naslov">Lični podaci</h2>
+                        <br>
                         <label for="imeprezime"> Ime i prezime </label>
                         <input id="imeprezime" type="text" placeholder="Ime i prezime..." required>
+                        <br>
+                        <br>
                         <div class="input-group">
                           <label for="telefon"> Broj telefona </label>
                         <input id="telefon" type="text" placeholder="Broj telefona..." required>
+                        <br>
+                        <br>
                         <label for="adresa"> Adresa za dostavu i naplatu </label>
                         <input id="adresa" type="text" placeholder="Adresa..." required>
                         <label>  
                         </div>
+                        <br>
                         <div class="input-group">
-                           <span>Država <span class="required">*</span></span>
-                            <select name="selection">
-                              <option value="select">Odaberite državu...</option>
-                              <option value="SRB">Srbija</option>
-                              <option value="CRO">Hrvatska</option>
-                              <option value="BIH">Bosna i Hercegovina</option>
-                              <option value="MNE">Crna Gora</option>
-                            </select>
-                           </label>  
+                            <span>Država <span class="required"></span></span>
+                             <select name="selection">
+                               <option value="select">Odaberite državu...</option>
+                               <option value="SRB">Srbija</option>
+                               <option value="CRO">Hrvatska</option>
+                               <option value="BIH">Bosna i Hercegovina</option>
+                               <option value="MNE">Crna Gora</option>
+                             </select>
+                            </label>  
+                         </div>
+                        <br>
+                        <div class="input-group">
+                            <label for="placanje">Način plaćanja</label>
+                            <br>
+                            <input type="radio" name="placanje" value="pouzecem">Plaćanje pouzećem
+                            <br>
+                            <input type="radio" name="placanje" value="naracun">Plaćanje na tekući račun
                         </div>
+                        <br>
+                        <br>
+                        
                           <div class="input-group">
                             <label for="napomena"> Posebna napomena za dostavu </label>
                         <textarea name="Napomena" id="napomena"></textarea>
                           </div>  
                         
                     </div>
-                   
+                   <br>
                         <h2 class="naslov">Odaberite artikle</h2> 
                         <div class="input-group">
                      <ul class="innercheck">
@@ -72,6 +90,7 @@
                                     <li><input type="checkbox" name="Torte" id="odabirtorte">
                                         <label for="odabirtorte">Moskva torta</label></li>
                                     </div> 
+                                    <br>
                                  </ul>
                                 <div class="inputgroup">
                                     <ul class="innercheck">
@@ -91,13 +110,15 @@
                                 </div>
                               
 
-                                                    <button id="poruci" type="submit">Poruči</button>
-                                                 <button type="clear">Izbriši</button>
+                
               
                
             </div>
            </div>
-        </form>
+              <button onclick="Klik()" type="submit">Poruči</button>
+             <button type="button" value="delete" onclick="deleteSomething()">Izbriši</button>
+        </form>                     
+                    
     </div>
 
     
