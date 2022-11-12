@@ -17,16 +17,16 @@ body{
 }
 
 .fixed-footer{
-    background-color:#d68681;
+    background-color: #ffc793;
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
     flex-grow: 1;
     align-items: center;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    height: 2.5rem;
+    height: 5rem;
     align-self: flex-end;
     padding: 1%;
     text-decoration: none;
