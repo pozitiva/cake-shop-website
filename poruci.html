@@ -60,9 +60,11 @@
                         <div class="input-group">
                             <label for="placanje">Način plaćanja</label>
                             <br>
-                            <input type="radio" name="placanje" value="pouzecem">Plaćanje pouzećem
                             <br>
-                            <input type="radio" name="placanje" value="naracun">Plaćanje na tekući račun
+                            <input type="radio" name="placanje"  onclick="show1();" value="pouzecem">Plaćanje pouzećem
+                            <br>
+                            <input type="radio" name="placanje" onclick="show2();" value="naracun">Plaćanje na tekući račun
+                            <div id="div1" class="hide">Broj tekućeg računa: 170-0012345678-11</div>
                         </div>
                         <br>
                         <br>
@@ -92,7 +94,7 @@
                                     </div> 
                                     <br>
                                  </ul>
-                                <div class="inputgroup">
+                                <div class="input-group">
                                     <ul class="innercheck">
                                      <li><input type="checkbox" name="Kafe" id="odabirkafe">
                                     <label for="odabirkafe">Cappucino</label></li>

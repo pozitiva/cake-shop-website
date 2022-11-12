@@ -7,6 +7,8 @@ function deleteSomething() {
  
   document.querySelectorAll('input[type="checkbox"]')
     .forEach(el => el.checked = false);
+    document.querySelectorAll('input[type="radio"]')
+    .forEach(el => el.checked = false);
 }
 
 function Klik() {
@@ -26,4 +28,13 @@ if(
   else alert("Niste popunili sva polja!");
   
 }
+
+function show1(){
+  document.getElementById('div1').style.display ='none';
+}
+
+function show2(){
+  document.getElementById('div1').style.display ='block';
+}
+
 
