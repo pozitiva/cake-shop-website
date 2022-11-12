@@ -1,17 +1,6 @@
-@import url('https://fonts.google.com/specimen/Albert+Sans');
-
-*{
-    margin: 1px;
-    font-family: "Albert Sans", sans-serif;
-}
-
-body{
-    height: 100%
-}
 
 .porudzbina{
     height: 100%;
-    background-color: blanchedalmond;
     display: flex;
     justify-content: center;
     align-items: center;

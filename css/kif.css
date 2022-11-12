@@ -1,21 +1,19 @@
 body{
-    
-  background-color: bisque;
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
  
  #naslovTorte , #naslovKafe {
+    margin-top: 80px; /* ovo nije responzivno i vrv je kod tebe drugacija udaljenost od navbara nego kod mene*/
+    /*tako da to moramo da sredimo kako da nam sve ovo sto ide ispod navbara uvek bude na istoj razdaljini*/
     text-align: center;
-    text-decoration-line: overline;
+    text-decoration-line: inherit;
     text-decoration-color: rgb(159, 118, 81);
     font-size: 40px;
     font-style: oblique;
     color: rgb(151, 126, 98);
 }
 
-  #opisKafe{
+  #opisKafe, #opisTorte{
   color: black;
   text-align: center;
 }
@@ -23,6 +21,13 @@ body{
   .flex div{
   color: white;
   width: 30%;
+  margin: 18px;
+  }
+
+  .flex h1{
+    font-size: 25px;
+    color: black;
+    text-align: inherit;
   }
 
   .flex {
@@ -32,12 +37,36 @@ body{
     margin: 50px;
     justify-content: space-evenly;
     align-items: baseline;
+    
   }
-
-  .flex h1{
-    color: black;
+  
+  .gallery-item img {
+    position: absolute;
+    border-radius: 5%;
+  }
+  
+  .text-wrapper {
+    position: relative;
+    width: 300px;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
+    color: #fff;
+    opacity: 0;
   }
+  
+  .text-wrapper:hover {
+    transition: all 0.8s ease;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+  }
+  
+  .name {
+    font-size: 1.5em;
+  }
+  
 
   @media screen and (max-width: 800px) {
     .flex {
@@ -47,11 +76,22 @@ body{
       justify-content: center;
       margin: 10px;
     }
+
   }
 
   @media screen and (max-width: 1100px){
     .flex div {
       width: 40%;
+    }
+
+    /*ovaj deo je jer ne postoji hover na telefonu pa kao da se spusti tekst ispod ali morace nesto drugo*/
+    .text-wrapper {
+      opacity: 1;
+      justify-content: flex-end;
+      text-shadow: 1px 1px 1px #000;
+    }
+    .title {
+      margin-bottom: 1em;
     }
   }
 

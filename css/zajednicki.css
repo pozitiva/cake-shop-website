@@ -1,17 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
 body{
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background-color: #e7b5ae;
-    margin: 0;
-    padding: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+    background-image: linear-gradient(#ebc6c2, #f0b3af, #e9c6a6, #f4c78c);
+    font-family: "Roboto Mono";
+    font-size: 18px;
 
-.wrapper{
-  flex: 1;
 }
 
 .fixed-footer{
@@ -57,36 +59,48 @@ body{
 header {
     display: flex;
     justify-content: flex-start;
-    list-style-type: none;
-    padding: 5px 0;
-    background-size: 400% 400%;
+    padding: 8px 0;
+    background-size: 600% 600%;
     background-image: linear-gradient(#E7B5AE, #D68681, #E8D7C7, #F8E6CE);
     border-radius: 35px;
     box-shadow: 10px 10px 30px #e86a61;
     overflow: hidden;
+    position: fixed;
+    z-index:1;
+    margin-top: 3px;
+    margin-left: 60px;
+    margin-right: 0px;
 }
 
 
 #nav-title {
- margin-left: 35px;
-  font-size: 1.5em;
+  margin-left: 35px;
+  font-size: 30px;
+}
+
+#nav-title a{
+  color:black;
+  text-decoration: none;
+  text-align: left;
+  font-weight: bold;
 }
 
 .topnav li {
   list-style: none;
   display: inline-block;
-  padding: 0 20px;
+  padding-top: 8px;
+  padding-right: 20px;
 }
 
 .topnav li a {
   color:black;
   text-decoration: none;
   text-align: center;
-  padding: 30px 30px;
+  padding: 40px 40px;
   font-weight: normal;
   font-size: 25px;
   letter-spacing: 1px;
-  opacity: 0.9;
+
 }
 
 header a:hover {
