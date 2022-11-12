@@ -10,11 +10,11 @@ body{
     text-decoration-color: rgb(159, 118, 81);
     font-size: 40px;
     font-style: oblique;
-    color: rgb(151, 126, 98);
+    color: rgb(230, 108, 99);
 }
 
   #opisKafe, #opisTorte{
-  color: black;
+  color: rgb(230, 108, 99);
   text-align: center;
 }
 
@@ -103,6 +103,10 @@ body{
       justify-content: center;
     }
   }
+
+  .levi , .desni{
+    color: rgb(230, 108, 99);
+    }
 
 
 

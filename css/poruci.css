@@ -23,6 +23,7 @@
     color: rgb(250, 134, 134);
 }
 
+
 .form-header{
     padding: 15px 0;
     border-bottom: 1px solid rgb(250, 134, 134);
@@ -80,6 +81,10 @@
     box-sizing: border-box;
     resize: vertical;
   }
+
+  .levi , .desni{
+    color: rgb(230, 108, 99);
+    }
 
   @media screen and (max-width: 600px) {
     .input-group, .innercheck, input[type=submit], button {

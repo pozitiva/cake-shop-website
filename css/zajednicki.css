@@ -79,7 +79,7 @@ header {
 }
 
 #nav-title a{
-  color:black;
+  color:rgb(230, 108, 99);
   text-decoration: none;
   text-align: left;
   font-weight: bold;
@@ -93,7 +93,7 @@ header {
 }
 
 .topnav li a {
-  color:black;
+  color:rgb(230, 108, 99);
   text-decoration: none;
   text-align: center;
   padding: 40px 40px;
@@ -107,7 +107,18 @@ header a:hover {
   color: #E8D7C7;
 }
 
+.name{
+  color: rgb(230, 108, 99);
+}
 
+.title{
+  font-size: 15px;
+  color: rgb(230, 108, 99);
+}
+
+.levi , .desni{
+color: rgb(230, 108, 99);
+}
  
 
 
