@@ -92,3 +92,15 @@
       margin-top: 0;
     }
   }
+
+  label, span{
+    color:  rgb(230, 108, 99);
+  }
+
+  ul{
+    list-style: none;
+  }
+
+  #placanje{
+    font-color: rgb(230, 108, 99);
+  }
