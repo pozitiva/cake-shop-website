@@ -108,6 +108,13 @@ body{
     color: rgb(230, 108, 99);
     }
 
+   /* @media screen and (max-width: 625px) {
+      .fixed-footer{
+        
+        font-size: 10px;
+      }
+    }*/
+
 
 
 

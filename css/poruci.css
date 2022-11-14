@@ -104,3 +104,11 @@
   #placanje{
     font-color: rgb(230, 108, 99);
   }
+
+  @media screen and (max-width: 625px) {
+    .fixed-footer{
+      width: 100%;
+      margin-top: 0;
+      font-size: 10px;
+    }
+  }
