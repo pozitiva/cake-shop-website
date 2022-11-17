@@ -67,6 +67,7 @@
   input[type=text], input[type=number], textarea{
     width: 80%;
     padding: 10px;
+
     border: 3px solid rgb(239, 154, 154);
     border-radius: 10px;
     box-sizing: border-box;
@@ -101,9 +102,7 @@
     list-style: none;
   }
 
-  #placanje{
-    font-color: rgb(230, 108, 99);
-  }
+  
 
   @media screen and (max-width: 625px) {
     .fixed-footer{
