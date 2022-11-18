@@ -19,8 +19,8 @@ if(
     if(confirm("Vaše ime:\n" + (document.getElementById('imeprezime').innerHTML = document.getElementById("imeprezime").value) + "\nVaš broj telefona:\n " + (document.getElementById('telefon').innerHTML = 
                     document.getElementById("telefon").value) + "\nVaša adresa:\n " + (document.getElementById('adresa').innerHTML = 
                     document.getElementById("adresa").value))){
-    alert("Vaša porudžbina je zabeležena!");
-    //return false;
+                      alert("Vaša porudžbina je zabeležena!");
+  
 } 
     else deleteSomething();
     
