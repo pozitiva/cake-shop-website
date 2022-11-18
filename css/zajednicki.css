@@ -3,18 +3,25 @@
 * {
   padding: 0;
   margin: 0px;
-  box-sizing: border-box;
 }
 
 body{
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
     background-image: linear-gradient(#ebc6c2, #f0b3af, #e9c6a6, #f4c78c);
     font-family: "Roboto Mono";
     font-size: 18px;
 
 }
+
+body, html {
+  width: 100vw;
+  min-width: 100vw;
+  max-width: 100vw;
+ 
+  overflow-x: hidden;
+  overflow-y: auto;
+ }
 
 .fixed-footer{
     background-color: #ffc793;
@@ -37,8 +44,11 @@ body{
     clear: both;
 }
 
-
-
+.levi , .desni{
+  color: rgb(230, 108, 99);
+  }
+   
+  
 @media only screen and (min-width: 400px) {
   .levi{
     justify-content: space-around;
@@ -57,47 +67,40 @@ body{
   }
 }
 
-@media screen and (max-width: 600px){
+  
+.header{
+  background-color: #D68681;
+  background-image: linear-gradient(#E7B5AE, #D68681, #E8D7C7, #F8E6CE);;
+  box-shadow: 10px 10px 30px #e86a61;
+  border-radius: 35px;
+  position: sticky;
+  width: 100%;
+}
+
+.logo{
+  display: inline-block;
+  color:rgb(230, 108, 99); 
+  font-size: 35px;
+  margin-left: 20px;
+  margin-top: 10px;
+  text-decoration: none; 
 
 }
 
-header {
-    display: flex;
-    justify-content: flex-start;
-    padding: 8px 0;
-    background-size: 600% 600%;
-    background-image: linear-gradient(#E7B5AE, #D68681, #E8D7C7, #F8E6CE);
-    border-radius: 35px;
-    box-shadow: 10px 10px 30px #e86a61;
-    overflow: hidden;
-    position: fixed;
-    z-index:1;
-    margin-top: 3px;
-    margin-left: 60px;
-    margin-right: 0px;
-}
-
-
-#nav-title {
-  margin-left: 35px;
-  font-size: 30px;
-}
-
-#nav-title a{
-  color:rgb(230, 108, 99);
-  text-decoration: none;
-  text-align: left;
-  font-weight: bold;
-}
-
-.topnav li {
+.nav{
   list-style: none;
   display: inline-block;
   padding-top: 8px;
   padding-right: 20px;
+  overflow: hidden;
+  
 }
 
-.topnav li a {
+.menu li{
+  list-style-type: none;
+}
+
+.menu a{
   color:rgb(230, 108, 99);
   text-decoration: none;
   text-align: center;
@@ -108,8 +111,97 @@ header {
 
 }
 
-header a:hover {
-  color: #E8D7C7;
+.nav{
+  max-height: 0;
+  transition: max-height .5s ease-out;
+}
+
+/* Menu Icon */
+
+.hamb{
+  cursor: pointer;
+  float: right;
+  padding: 40px 20px;
+}
+
+
+.hamb-line {
+  background: #E8D7C7;
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 24px;
+  
+}
+
+.hamb-line::before,
+.hamb-line::after{
+  background: #E8D7C7;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.hamb-line::before{
+  top: 5px;
+}
+
+.hamb-line::after{
+  top: -5px;
+}
+
+.side-menu {
+  display: none;
+}
+
+/* Toggle menu icon */
+
+.side-menu:checked ~ nav{
+  max-height: 100%;
+}
+
+.side-menu:checked ~ .hamb .hamb-line {
+  background: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+  transform: rotate(-45deg);
+  top:0;
+
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after {
+  transform: rotate(45deg);
+  top:0;
+}
+
+
+@media (min-width: 768px) {
+  .header{
+    position: fixed;
+    z-index: 1;
+  }
+  
+  .nav{
+      max-height: none;
+      top: 0;
+      position: sticky;
+      float: right;
+  }
+
+  .menu li{
+      float: left;
+  }
+
+  .menu a:hover{
+      color: #E8D7C7;
+  }
+  
+  .hamb{
+      display: none;
+  }
+
 }
 
 .name{
@@ -120,10 +212,3 @@ header a:hover {
   font-size: 15px;
   color: rgb(230, 108, 99);
 }
-
-.levi , .desni{
-color: rgb(230, 108, 99);
-}
- 
-
-

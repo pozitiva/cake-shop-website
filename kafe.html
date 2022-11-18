@@ -10,22 +10,29 @@
 </head>
 <body>
 
-    <header>
-        <h1 id="nav-title">Bela čokolada</h1>
-        <nav class="topnav">
-                <ul>
-                    <li> <a href="naslovna.html"> Početna</a></li>
-                    <li> <a href="kafe.html"> Kafe</a></li>
-                    <li> <a href="torte.html"> Torte </a></li>
-                    <li> <a href="poruci.html" target="_blank"> Poruči</a></li>
-                </ul>
+    <header class="header">
+        <a href="naslovna.html" class="logo">Bela čokolada</a>
+      
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+      
+        <nav class="nav">
+            <ul class="menu">
+              <li> <a href="naslovna.html"> Početna</a></li>
+              <li> <a href="kafe.html"> Kafe</a></li>
+              <li> <a href="torte.html"> Torte </a></li>
+              <li> <a href="poruci.html"> Poruči</a></li>
+            </ul>
         </nav>
-    </header>
+      </header>
 
 
     <div>
-         <h1 id="naslovKafe">kafe kafica</h1>
-         <p id="opisKafe">nasa kafa najbolja kafa na svetu veruj mi brate uzmi nasu kafu</p>
+         <h1 id="naslovKafe">Kafe</h1>
+         <br>
+         <p id="opisKafe">Čini nam se da vam je potrebna šolja dobre kafe. <br> Gde god da se nalazite možete naručiti našu kafu za poneti.
+        </p>
     </div>
 
     <div class="flex">
@@ -33,29 +40,29 @@
             <a class="gallery-item">
                 <img src="slike/capuccino.jpg">
                 <span class="text-wrapper">
-                    <span class="name">Cappuccino</span>
-                    <span class="title">bas dobra kafa</span>
+                    <span class="name">Kapućino</span>
+                    <span class="title">Čašica espressa i 150ml mleka, čokoladni komadići</span>
                 </span>
             </a>
-            <h1>Cappuccino</h1>
+            <h1>Kapućino</h1>
          </div>
 
          <div id="flex2">  
             <a class="gallery-item">
                 <img src="slike/ice-coffee.jpg">
                 <span class="text-wrapper">
-                    <span class="name">Ice coffee</span>
-                    <span class="title">bas dobra kafa</span>
+                    <span class="name">Hladna kafa</span>
+                    <span class="title">Čašica espressa i šolja mleka i kockice leda</span>
                 </span>
             </a>
-            <h1>Ice coffee</h1>
+            <h1>Hladna kafa</h1>
          </div>
          <div id="flex3"> 
             <a class="gallery-item">
                 <img src="slike/moka.jpg">
                 <span class="text-wrapper">
                     <span class="name">Moka kafa</span>
-                    <span class="title">bas dobra kafa</span>
+                    <span class="title">Čašica espressa i šolja mleka i čokoladni sirup</span>
                 </span>
             </a>
             <h1>Moka kafa</h1>
@@ -65,7 +72,7 @@
                 <img src="slike/espresso.jpg">
                 <span class="text-wrapper">
                     <span class="name">Espresso</span>
-                    <span class="title">bas dobra kafa</span>
+                    <span class="title">Dve kašičice pržene mlevene kafe za espresso</span>
                 </span>
             </a>
             <h1>Espresso</h1>
@@ -74,30 +81,30 @@
             <a class="gallery-item">
                 <img src="slike/latte.jpg">
                 <span class="text-wrapper">
-                    <span class="name">Caffe latte</span>
-                    <span class="title">bas dobra kafa</span>
+                    <span class="name">Latte kafa</span>
+                    <span class="title">Čašica espressa i 3/4 šolje mleka, sirup od karamele</span>
                 </span>
             </a>
-            <h1>Caffe latte</h1>
+            <h1>Latte kafa</h1>
          </div>
          <div id="flex6">
             <a class="gallery-item">
                 <img src="slike/turska.jpg">
                 <span class="text-wrapper">
-                    <span class="name">Turska kafa</span>
-                    <span class="title">bas dobra kafa</span>
+                    <span class="name">Domaća kafa</span>
+                    <span class="title">Dve kasičice mlevene kafe i 3dl vode</span>
                 </span>
             </a>
-            <h1>Turska kafa</h1>
+            <h1>Domaća kafa</h1>
          </div>
     </div>
 
 
        
-    <!-- <div class="fixed-footer">
+    <div class="fixed-footer">
         <div class="levi"><b>Adresa: </b> Jove Ilića 154, 11010 Beograd</div>
         <div class="levi"><b>Radno vreme:</b>  Ponedelja-Subota 10-18h</div>
         <div class="desni"><b> Broj telefona:</b> 060/61-36-125 <br><i>porudzbine@belacokolada.rs</i> </div>
-    </div> -->
+    </div>
 </body>
 </html>

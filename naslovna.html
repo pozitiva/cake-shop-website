@@ -12,53 +12,69 @@
 <body>
 <!-- Boje: #E7B5AE•#D68681•#E8D7C7•#F8E6CE -->
 
-<header>
-    <h1 id="nav-title"><a href="naslovna.html">Bela čokolada</a></h1>
-    <nav class="topnav">
-            <ul>
-                <li> <a href="naslovna.html"> Početna</a></li>
-                <li> <a href="kafe.html"> Kafe</a></li>
-                <li> <a href="torte.html"> Torte </a></li>
-                <li> <a href="poruci.html" target="_blank"> Poruči</a></li>
-            </ul>
-    </nav>
+
+<header class="header">
+  <a href="naslovna.html" class="logo">Bela čokolada</a>
+
+  <!-- Hamburger icon -->
+  <input class="side-menu" type="checkbox" id="side-menu"/>
+  <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
+  <nav class="nav">
+      <ul class="menu">
+        <li> <a href="naslovna.html"> Početna</a></li>
+        <li> <a href="kafe.html"> Kafe</a></li>
+        <li> <a href="torte.html"> Torte </a></li>
+        <li> <a href="poruci.html"> Poruči</a></li>
+      </ul>
+  </nav>
 </header>
+
+
 
 <section id="hero">
     <div class="container">
       <div class="info">
         <h1>Poslastičarnica <br> Bela čokolada</h1>
-        <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem vero ratione vitae dicta explicabo
-          perferendis amet quis provident molestiae magni!</p> <br>
-        <button> <a href="poruci.html" target="_blank">Poruči</a></button>
+        <h2>Susret dobrih ukusa!</h2>
+        <p> Dizajnirani, pripremljeni i upakovani sa posebnom pažnjom, naši proizvodi će raznežiti svaku dušu i obradovati svaku osobu.
+        </p> <br>
+        <button> <a href="poruci.html">Poruči</a></button>
       </div>
     </div>
   </section>
 
-
   <div class="flex_naslovna">
 
-    <div id="box1">
-      <p>bice ovde neka random slika tekstic tipa da smo najjaca poslasticarnica ikad i tako to</p>
-    </div>
-    <div id="box2">
-      <p>bice ovde neka random slika tekstic tipa da smo najjaca poslasticarnica ikad i tako to</p>
-      
-    </div>
-    <div id="box3">
-      <p>bice ovde neka random slika tekstic tipa da smo najjaca poslasticarnica ikad i tako to</p>
-      
-    </div>
+      <div class="box box1">
+         <div class="tekst tekst1">
+             <h1>O nama</h1> <br>
+             <p>Poslastičarnica Bela čokolada stvara slatku tradiciju u Beogradu od 2001. godine, kada smo postali neizostavni deo života ljubitelja prefinjenih ukusa.
+              Tim vrhunskih poslastičara i kafe majstora tu je da ispuni sve vaše svakodnevne slatke želje.</p>
+          </div>
+
+         <img src="./slike/prodavnica.jpg" alt="">
+      </div>
+
+      <div class="box box2">
+
+        <img src="./slike/izlog.jpg" alt="">
+        <div class="tekst tekst2">
+            <h1>Koja je tajna Bele čokolade?</h1><br>
+            <p>Torte i kafe pravimo koristeći najkvalitetnije i najfinije domaće i uvozne sirovine koje su uz ručnu izradu naših veštih majstora garancija kvaliteta.
+              Svakim danom trudimo se da budemo još bolji, a torte i kafe još ukusnije pa spajamo najmoderniju tehnologiju sa tradicionalnim načinima pravljenja poslastica.</p>
+         </div>
+     </div>
 
   </div>
 
-<!-- <footer class="fixed-footer">
+
+<footer class="fixed-footer">
     <div class="levi"><b>Adresa: </b> Jove Ilića 154, 11010 Beograd</div>
     <div class="levi"><b>Radno vreme:</b>  Ponedelja-Subota 10-18h</div>
     <div class="desni"><b> Broj telefona:</b> 060/61-36-125 <br><i>porudzbine@belacokolada.rs</i> </div>
 
-</footer> -->
+</footer>
 
 </body>
 </html>
