@@ -1,7 +1,3 @@
-/* Upotrebiti najmanje jednu dodatnu funkcionalnost korišćenjem jQuery plugin-ova u skladu sa tematikom veb   prezentacije
- 
- Obezbediti barem tri dodatne funkcionalnosti posetiocima uz pomoć JavaScript-a korišćenjem objekata Date,   Window, Document..  
- (zahtev za više ocene)*/
 
 function deleteSomething() {
   alert("Brisanje unosa...");
@@ -42,4 +38,6 @@ function show2(){
   document.getElementById('div1').style.display ='block';
 }
 
-
+var date = new Date();
+	var current_date = date.getDate()+"-"+(date.getMonth()+1)+"-"+ date.getFullYear()+" "+date.getHours()+":"+date.getMinutes()+":"+ date.getSeconds();
+	document.getElementById("txt").innerHTML = current_date;
