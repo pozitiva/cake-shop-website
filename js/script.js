@@ -1,3 +1,8 @@
+/* Upotrebiti najmanje jednu dodatnu funkcionalnost korišćenjem jQuery plugin-ova u skladu sa tematikom veb   prezentacije
+ 
+ Obezbediti barem tri dodatne funkcionalnosti posetiocima uz pomoć JavaScript-a korišćenjem objekata Date,   Window, Document..  
+ (zahtev za više ocene)*/
+
 function deleteSomething() {
   alert("Brisanje unosa...");
   document.getElementById("imeprezime").value = "";
