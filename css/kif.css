@@ -2,7 +2,7 @@ body{
   display: flex;
 }
  
- #naslovTorte , #naslovKafe {
+ #hTorte , #hKafe {
     margin-top: 80px;
     text-align: center;
     text-decoration-line: inherit;
@@ -11,7 +11,7 @@ body{
     color: rgb(192, 57, 47);
 }
 
-  #opisKafe, #opisTorte{
+  #pKafe, #pTorte{
   color: rgb(230, 108, 99);
   text-align: center;
   margin-left: 10px ;
@@ -95,16 +95,6 @@ body{
       color: black;
       text-align: inherit;
     }
-
-     /*ovaj deo je jer ne postoji hover na telefonu pa kao da se spusti tekst ispod ali morace nesto drugo*/
-    /* .text-wrapper {
-      opacity: 1;
-      justify-content: flex-end;
-      text-shadow: 1px 1px 1px #000;
-    }
-    .title {
-      margin-bottom: 1em;
-    }  */
   }
 
   @media screen and (max-width: 710px) {

@@ -1,5 +1,5 @@
 
-.porudzbina{
+.poruci{
     height: 100%;
     display: flex;
     justify-content: center;
@@ -7,7 +7,7 @@
     overflow: scroll;
 }
 
-.forma{
+.form{
     flex: 1;
     background-color: blanchedalmond;
     max-width: 700px;
@@ -83,10 +83,6 @@
     resize: vertical;
   }
 
-  .levi , .desni{
-    color: rgb(230, 108, 99);
-    }
-
   @media screen and (max-width: 600px) {
     .input-group, .innercheck, input[type=submit], button {
       width: 100%;
@@ -100,14 +96,4 @@
 
   ul{
     list-style: none;
-  }
-
-  
-
-  @media screen and (max-width: 710px) {
-    .fixed-footer{
-      width: 100%;
-      margin-top: 0;
-      font-size: 10px;
-    }
   }

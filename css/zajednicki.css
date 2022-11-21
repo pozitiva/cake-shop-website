@@ -36,18 +36,14 @@ body, html {
     height:100px;
     margin-top: -5px;
    
-     display:flex;
+    display:flex;
     flex-direction: column;
     flex-wrap: wrap;
     flex-grow: 1;
     align-items: center;
+    color: rgb(230, 108, 99);
     
 }
-
-.levi , .desni{
-  color: rgb(230, 108, 99);
-  }
-   
   
 @media only screen and (min-width: 400px) {
   .levi{

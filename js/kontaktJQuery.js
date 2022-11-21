@@ -1,4 +1,4 @@
-;(function ($) {
+(function ($) {
 
     'use strict';
 
@@ -10,7 +10,6 @@
             var $images  = $gallery.find(settings.tag);
             var loop;
 
-            // Local functions
             var show = function ($image) {
                 $images.removeClass('current').fadeOut().promise().done(function () {
                     $image.addClass('current').fadeIn();
