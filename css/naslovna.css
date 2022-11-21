@@ -112,14 +112,12 @@
     height: 100%;
   }
 
-  #hero .info h1{
-    font-size: 30px;
+  #hero .info {
+    width: 100%;
   }
 
-  #hero .info {
-    background: rgb(204, 204, 204);
-    background: rgba(204, 204, 204, 0.5);
-    width: 100%;
+  #hero .info h1{
+    font-size: 30px;
   }
 
   #hero .info h2{
@@ -133,9 +131,6 @@
     font-size: 20px;
   }
 
-  #hero{
-    height: 100%;
-  }
   .box img{
     height: 150px;
   }
