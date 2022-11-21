@@ -42,18 +42,6 @@ body, html {
     flex-grow: 1;
     align-items: center;
     
-    /*
-    bottom: 0;
-    width: 100%;
-    height: 5rem;
-    align-self: flex-end;
-    padding: 1%;
-    text-decoration: none;
-
-    z-index: 10;
-    margin-top: 350px;
-    position: relative;
-    clear: both;*/
 }
 
 .levi , .desni{
@@ -128,7 +116,7 @@ body, html {
   transition: max-height .5s ease-out;
 }
 
-/* Menu Icon */
+/* meni */
 
 .hamb{
   cursor: pointer;

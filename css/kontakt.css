@@ -4,6 +4,7 @@
   max-width: 1200px;
   align-items: center;
   justify-content: left;
+  margin-left: 40px;
 
 }
 .box{
@@ -60,7 +61,6 @@
 
     .box{
       align-self: center;
-      margin-left: 50px;
       margin-top: 15px;
 
     }
