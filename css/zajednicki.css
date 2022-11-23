@@ -44,22 +44,12 @@ body, html {
     color: rgb(230, 108, 99);
     
 }
-  
-@media only screen and (min-width: 400px) {
-  .levi{
-    justify-content: space-around;
-  }
-  .desni{
-    justify-content: space-around;
-  }
-}
 
-@media only screen and (min-width: 1000px) {
-  .levi{
-    justify-content: space-evenly;
-  }
-  .desni{
-    justify-content: space-evenly;
+@media screen and (max-width: 710px) {
+  .fixed-footer{
+    width: 100%;
+    margin-top: 0;
+    font-size: 10px;
   }
 }
 
@@ -209,10 +199,4 @@ body, html {
   color: rgb(230, 108, 99);
 }
 
-@media screen and (max-width: 710px) {
-  .fixed-footer{
-    width: 100%;
-    margin-top: 0;
-    font-size: 10px;
-  }
-}
+
