@@ -1,5 +1,4 @@
 function deleteSomething() {
-  alert("Brisanje unosa...");
   document.getElementById("imeprezime").value = "";
   document.getElementById("telefon").value = "";
   document.getElementById("adresa").value = "";
@@ -7,9 +6,6 @@ function deleteSomething() {
 
   document
     .querySelectorAll('input[type="checkbox"]')
-    .forEach((el) => (el.checked = false));
-  document
-    .querySelectorAll('input[type="radio"]')
     .forEach((el) => (el.checked = false));
 }
 
@@ -58,9 +54,13 @@ function clickButton(event) {
     },
     body: JSON.stringify(podaci),
   })
+    .catch((error) => alert("Neuspesna narudzbina"))
     .then((response) => response.json())
-    .then((response) => console.log(JSON.stringify(response)));
-  alert("Vaša porudžbina je zabeležena!");
+    .then((response) => {
+      console.log(JSON.stringify(response));
+      alert("Vaša porudžbina je zabeležena!");
+      deleteSomething();
+    });
 }
 
 function show1() {
