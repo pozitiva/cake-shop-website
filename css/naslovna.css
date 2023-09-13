@@ -1,15 +1,13 @@
-
 #hero {
   height: 100vh;
   width: 100%;
   margin-top: 0px;
 
-  background-image: url(/epos-projekat/slike/heropage.jpg);
+  background-image: url(/slike/heropage.jpg);
   background-color: linear-gradient(rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0.342));
-  background-position: center; 
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; 
-  
+  background-size: cover;
 }
 
 .container {
@@ -24,14 +22,12 @@
   background-size: cover;
   background-attachment: fixed;
   align-items: center;
-
 }
 
-#hero .info{
+#hero .info {
   background: rgb(204, 204, 204);
   background: rgba(204, 204, 204, 0.5);
   width: 60%;
-   
 }
 #hero .info h1 {
   font-size: 4vw;
@@ -51,7 +47,7 @@
   padding-left: 20px;
 }
 
-.button_poruci{
+.button_poruci {
   margin: 20px;
   display: inline-block;
   border-radius: 10px;
@@ -63,17 +59,17 @@
   font-size: 2.3vw;
   padding: 8px 32px;
   color: rgb(230, 108, 99);
-  background-color: #F8E6CE;
+  background-color: #f8e6ce;
 }
 
-.box{
+.box {
   display: flex;
   justify-content: space-between;
   padding: 30px;
   width: 90%;
 }
 
-.box img{
+.box img {
   max-width: fit-content;
   max-inline-size: 100%;
   height: 350px;
@@ -82,32 +78,31 @@
   margin: 10px;
 }
 
-.text{
+.text {
   margin-top: 10px;
   color: rgb(230, 108, 99);
   font-size: 1.5vw;
 }
 
-.text h1{
+.text h1 {
   color: rgb(192, 57, 47);
 }
 
-.text1{
+.text1 {
   margin-left: 2vw;
 }
-.text2{
+.text2 {
   margin-left: 4vw;
 }
-.box1 img{
+.box1 img {
   margin-left: 4vw;
 }
-.box2 img{
+.box2 img {
   margin-left: 2vw;
 }
 
-@media (orientation: portrait){
-
-  #hero{
+@media (orientation: portrait) {
+  #hero {
     height: 100%;
   }
 
@@ -115,33 +110,31 @@
     width: 100%;
   }
 
-  #hero .info h1{
+  #hero .info h1 {
     font-size: 30px;
   }
 
-  #hero .info h2{
+  #hero .info h2 {
     font-size: 20px;
   }
-  #hero .info p{
-  font-size: 15px;
+  #hero .info p {
+    font-size: 15px;
   }
 
-  #hero .info button a{
+  #hero .info button a {
     font-size: 20px;
   }
 
-  .box img{
+  .box img {
     height: 150px;
   }
 
-  .box2 img{
+  .box2 img {
     margin-left: 1vw;
   }
 
-  .text{
+  .text {
     font-size: 2vw;
     margin-left: 0px;
   }
 }
-
-

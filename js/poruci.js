@@ -1,39 +1,87 @@
 function deleteSomething() {
-    alert("Brisanje unosa...");
-    document.getElementById("imeprezime").value = "";
-    document.getElementById("telefon").value = "";
-    document.getElementById("adresa").value = "";
-    document.getElementById("napomena").value = "";
+  alert("Brisanje unosa...");
+  document.getElementById("imeprezime").value = "";
+  document.getElementById("telefon").value = "";
+  document.getElementById("adresa").value = "";
+  document.getElementById("napomena").value = "";
 
-    document.querySelectorAll('input[type="checkbox"]')
-      .forEach(el => el.checked = false);
-    document.querySelectorAll('input[type="radio"]')
-      .forEach(el => el.checked = false);
+  document
+    .querySelectorAll('input[type="checkbox"]')
+    .forEach((el) => (el.checked = false));
+  document
+    .querySelectorAll('input[type="radio"]')
+    .forEach((el) => (el.checked = false));
 }
 
-function click_button() {
-  if(
-    document.getElementById("imeprezime").value != "" &
-    document.getElementById("telefon").value != "" &
-    document.getElementById("adresa").value != ""){
-      if(confirm("Vaše ime:\n" + (document.getElementById('imeprezime').innerHTML = document.getElementById("imeprezime").value) + "\nVaš broj telefona:\n " + (document.getElementById('telefon').innerHTML = 
-                  document.getElementById("telefon").value) + "\nVaša adresa:\n " + (document.getElementById('adresa').innerHTML = 
-                  document.getElementById("adresa").value))){
-                      alert("Vaša porudžbina je zabeležena!");} 
-      else deleteSomething();
-    
+function getValue(name) {
+  var checkboxes = document.getElementsByName(name);
+  var result = [];
+  for (var i = 0; i < checkboxes.length; i++) {
+    if (checkboxes[i].checked) {
+      result.push(checkboxes[i].value);
+    }
   }
-  else alert("Niste popunili sva polja!");
+  return result;
 }
 
-function show1(){
-    document.getElementById('div1').style.display ='none';
+function clickButton(event) {
+  event.preventDefault();
+  let imePrezime = document.getElementById("imeprezime").value;
+  let telefon = document.getElementById("telefon").value;
+  let adresa = document.getElementById("adresa").value;
+  let drzava = document.getElementById("drzava").value;
+  let napomena = document.getElementById("napomena").value;
+  let torte = getValue("Torte");
+  let kafe = getValue("Kafe");
+  if (imePrezime == "" || telefon == "" || adresa == "" || drzava == "") {
+    alert("Niste popunili polja");
+    return;
+  }
+
+  let podaci = {
+    imePrezime,
+    telefon,
+    adresa,
+    drzava,
+    napomena,
+    torte,
+    kafe,
+  };
+
+  localStorage.setItem("podaci", podaci);
+
+  fetch("http://localhost:3000/poruci", {
+    method: "POST",
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(podaci),
+  })
+    .then((response) => response.json())
+    .then((response) => console.log(JSON.stringify(response)));
+  alert("Vaša porudžbina je zabeležena!");
 }
 
-function show2(){
-    document.getElementById('div1').style.display ='block';
+function show1() {
+  document.getElementById("div1").style.display = "none";
+}
+
+function show2() {
+  document.getElementById("div1").style.display = "block";
 }
 
 var date = new Date();
-    var current_date = date.getDate()+"-"+(date.getMonth()+1)+"-"+ date.getFullYear()+" "+date.getHours()+":"+date.getMinutes()+":"+ date.getSeconds();
-    document.getElementById("txt").innerHTML = current_date;
+var current_date =
+  date.getDate() +
+  "-" +
+  (date.getMonth() + 1) +
+  "-" +
+  date.getFullYear() +
+  " " +
+  date.getHours() +
+  ":" +
+  date.getMinutes() +
+  ":" +
+  date.getSeconds();
+document.getElementById("txt").innerHTML = current_date;

@@ -1,124 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Poruči</title>
-    <link rel="stylesheet" href="css/zajednicki.css">
-    <link rel="stylesheet" href="css/poruci.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/zajednicki.css" />
+    <link rel="stylesheet" href="css/poruci.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
     <header class="header">
-        <a href="naslovna.html" class="logo">Bela čokolada</a>
-      
-        <!-- hamburger -->
-        <input class="side-menu" type="checkbox" id="side-menu"/>
-        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-      
-        <nav class="nav">
-            <ul class="menu">
-              <li> <a href="naslovna.html"> Početna</a></li>
-              <li> <a href="kafe.html"> Kafe</a></li>
-              <li> <a href="torte.html"> Torte </a></li>
-              <li> <a href="poruci.html"> Poruči</a></li>
-              <li> <a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </nav>
-      </header>
+      <a href="naslovna.html" class="logo">Bela čokolada</a>
 
-<div class="wrapper">
-    <div class="poruci">
+      <!-- hamburger -->
+      <input class="side-menu" type="checkbox" id="side-menu" />
+      <label class="hamb" for="side-menu"
+        ><span class="hamb-line"></span
+      ></label>
 
-        <form class="form" onsubmit="click_button()" >
-           <div class="form-header">
-                <br><h1> Porudžbina </h1><br>
-                <div class="form-body">
-                    <div class="input-group">
-                        <h2 class="naslov">Lični podaci</h2><br>
-                        <label for="imeprezime"> Ime i prezime </label>
-                        <input id="imeprezime" type="text" placeholder="Ime i prezime..." required><br><br>
-                    </div>
-                    <div class="input-group">
-                        <label for="telefon"> Broj telefona </label>
-                        <input id="telefon" type="text" placeholder="Broj telefona..." required><br><br>
-                        <label for="adresa"> Adresa za dostavu i naplatu </label>
-                        <input id="adresa" type="text" placeholder="Adresa..." required>  
-                    </div><br>
-                    <div class="input-group">
-                        <span>Država <span class="required"></span></span>
-                        <select name="selection">
-                            <option value="select">Odaberite državu...</option>
-                            <option value="SRB">Srbija</option>
-                            <option value="CRO">Hrvatska</option>
-                            <option value="BIH">Bosna i Hercegovina</option>
-                            <option value="MNE">Crna Gora</option>
-                        </select>
-                    </div><br>
-                    <div class="input-group">
-                        <label for="placanje">Način plaćanja</label><br><br>
-                        <input type="radio" name="placanje"  onclick="show1();" value="pouzecem">Plaćanje pouzećem<br>
-                        <input type="radio" name="placanje" onclick="show2();" value="naracun">Plaćanje na tekući račun
-                        <div id="div1" class="hide">Broj tekućeg računa: 170-0012345678-11</div>
-                    </div><br><br>
-                    <div class="input-group">
-                        <label for="napomena"> Posebna napomena za dostavu </label>
-                        <textarea name="Napomena" id="napomena"></textarea>
-                    </div> <br>
-                        
-                    <h2 class="naslov">Odaberite artikle</h2> 
-                    <div class="input-group">
-                     <ul class="innercheck">
-                        <li><input type="checkbox" name="Torte" id="odabirtorte">
-                            <label for="odabirtorte">Doboš torta</label></li>
-                            <li><input type="checkbox" name="Torte" id="odabirtorte">
-                                <label for="odabirtorte">Baron torta</label></li>
-                                <li><input type="checkbox" name="Torte" id="odabirtorte">
-                                    <label for="odabirtorte">ČokoMoko torta</label></li>
-                                    <li><input type="checkbox" name="Torte" id="odabirtorte">
-                                        <label for="odabirtorte">Limun torta</label></li>
-                                        <li><input type="checkbox" name="Torte" id="odabirtorte">
-                                            <label for="odabirtorte">Oreo torta</label></li>
-                                            <li><input type="checkbox" name="Torte" id="odabirtorte">
-                                                <label for="odabirtorte">Moskva torta</label></li>
-                        </ul>
-                    </div> <br>
+      <nav class="nav">
+        <ul class="menu">
+          <li><a href="naslovna.html"> Početna</a></li>
+          <li><a href="kafe.html"> Kafe</a></li>
+          <li><a href="torte.html"> Torte </a></li>
+          <li><a href="poruci.html"> Poruči</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
 
-                    <div class="input-group">
-                        <ul class="innercheck">
-                            <li><input type="checkbox" name="Kafe" id="odabirkafe">
-                                <label for="odabirkafe">Kapućino</label></li>
-                                <li><input type="checkbox" name="Kafe" id="odabirkafe">
-                                    <label for="odabirkafe">Hladna kafa</label></li>
-                                    <li><input type="checkbox" name="Kafe" id="odabikafe">
-                                        <label for="odabirkafe">Moka kafa</label></li>
-                                        <li><input type="checkbox" name="Kafe" id="odabirkafe">
-                                            <label for="odabirkafe">Espresso</label></li>
-                                            <li><input type="checkbox" name="Kafe" id="odabirkafe">
-                                                <label for="odabirkafe">Latte kafa</label></li>
-                                                <li><input type="checkbox" name="Kafe" id="odabirkafe">
-                                                        <label for="odabirkafe">Domaća kafa</label></li>  
-                        </ul>             
-                    </div>
-                </div>
+    <div class="wrapper">
+      <div class="poruci">
+        <form class="form" onsubmit="clickButton(event)">
+          <div class="form-header">
+            <br />
+            <h1>Porudžbina</h1>
+            <br />
+            <div class="form-body">
+              <div class="input-group">
+                <h2 class="naslov">Lični podaci</h2>
+                <br />
+                <label for="imeprezime"> Ime i prezime </label>
+                <input
+                  id="imeprezime"
+                  type="text"
+                  placeholder="Ime i prezime..."
+                  required
+                /><br /><br />
+              </div>
+              <div class="input-group">
+                <label for="telefon"> Broj telefona </label>
+                <input
+                  id="telefon"
+                  type="text"
+                  placeholder="Broj telefona..."
+                  required
+                /><br /><br />
+                <label for="adresa"> Adresa za dostavu i naplatu </label>
+                <input
+                  id="adresa"
+                  type="text"
+                  placeholder="Adresa..."
+                  required
+                />
+              </div>
+              <br />
+              <div class="input-group">
+                <span>Država <span class="required"></span></span>
+                <select name="selection" id="drzava">
+                  <option value="">Odaberite državu...</option>
+                  <option value="SRB">Srbija</option>
+                  <option value="CRO">Hrvatska</option>
+                  <option value="BIH">Bosna i Hercegovina</option>
+                  <option value="MNE">Crna Gora</option>
+                </select>
+              </div>
+              <br />
+              <div class="input-group">
+                <label for="napomena"> Posebna napomena za dostavu </label>
+                <textarea name="Napomena" id="napomena"></textarea>
+              </div>
+              <br />
+
+              <h2 class="naslov">Odaberite artikle</h2>
+              <div class="input-group">
+                <ul class="innercheck">
+                  <li>
+                    <input
+                      type="checkbox"
+                      name="Torte"
+                      id="odabirtorte"
+                      value="Dobos torta"
+                    />
+                    <label for="odabirtorte">Doboš torta</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      name="Torte"
+                      id="odabirtorte"
+                      value="Baron torta"
+                    />
+                    <label for="odabirtorte">Baron torta</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      name="Torte"
+                      id="odabirtorte"
+                      value="Cokomoko torta"
+                    />
+                    <label for="odabirtorte">ČokoMoko torta</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      name="Torte"
+                      id="odabirtorte"
+                      value="Limun torta"
+                    />
+                    <label for="odabirtorte">Limun torta</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      name="Torte"
+                      id="odabirtorte"
+                      value="Oreo torta"
+                    />
+                    <label for="odabirtorte">Oreo torta</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      name="Torte"
+                      id="odabirtorte"
+                      value="Moskva torta"
+                    />
+                    <label for="odabirtorte">Moskva torta</label>
+                  </li>
+                </ul>
+              </div>
+              <br />
+
+              <div class="input-group">
+                <ul class="innercheck">
+                  <li>
+                    <input
+                      type="checkbox"
+                      name="Kafe"
+                      id="odabirkafe"
+                      value="Kapucino"
+                    />
+                    <label for="odabirkafe">Kapućino</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      name="Kafe"
+                      id="odabirkafe"
+                      value="Hladna kafa"
+                    />
+                    <label for="odabirkafe">Hladna kafa</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      name="Kafe"
+                      id="odabikafe"
+                      value="Moka kafa"
+                    />
+                    <label for="odabirkafe">Moka kafa</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      name="Kafe"
+                      id="odabirkafe"
+                      value="Espresso"
+                    />
+                    <label for="odabirkafe">Espresso</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      name="Kafe"
+                      id="odabirkafe"
+                      value="Latte kafa"
+                    />
+                    <label for="odabirkafe">Latte kafa</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      name="Kafe"
+                      id="odabirkafe"
+                      value="Domaca kafa"
+                    />
+                    <label for="odabirkafe">Domaća kafa</label>
+                  </li>
+                </ul>
+              </div>
             </div>
-    
-             <button onsubmit="click_button()" type="submit">Poruči</button>
-             <button type="button" value="delete" onclick="deleteSomething()">Izbriši</button>
-             <br><br>
-             <span id="txt"></span>
-        </form>                               
-    </div>
-</div>
+          </div>
 
+          <button onsubmit="clickButton(event)" type="submit">Poruči</button>
+          <button type="button" value="delete" onclick="deleteSomething()">
+            Izbriši
+          </button>
+          <br /><br />
+          <span id="txt"></span>
+        </form>
+      </div>
+    </div>
 
     <div class="fixed-footer">
-        <div><b>Adresa: </b> Jove Ilića 154, 11010 Beograd</div>
-        <div><b>Radno vreme:</b>  Ponedelja-Subota 10-18h</div>
-        <div><b> Broj telefona:</b> 060/61-36-125 <br><i>porudzbine@belacokolada.rs</i> </div>
+      <div><b>Adresa: </b> Jove Ilića 154, 11010 Beograd</div>
+      <div><b>Radno vreme:</b> Ponedelja-Subota 10-18h</div>
+      <div>
+        <b> Broj telefona:</b> 060/61-36-125 <br /><i
+          >porudzbine@belacokolada.rs</i
+        >
+      </div>
     </div>
 
     <script src="js/poruci.js"></script>
-</body>
+  </body>
 </html>
